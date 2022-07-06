@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <body>
+        <img src="Функции_задача 2.png">
+        <script>
+        "use strict";
+        
+        function checkAge(age) {
+        return (age > 18)?true:"Родители разрешили?"; 
+        }
+
+        console.log(checkAge(30));
+        console.log(checkAge(15));
+
+        function checkAge(age) {
+        return (age > 18) || "Родители разрешили?"; 
+        }
+
+        console.log(checkAge(30));
+        console.log(checkAge(15));
+
+        </script>
+        
+    </body>
+</html>

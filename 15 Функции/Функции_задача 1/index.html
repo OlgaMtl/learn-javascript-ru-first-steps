@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <body>
+        <img src="функции_задача 1.png">
+        <script>
+            "use strict";
+            // "else" не обязателен, оба варианты работают одинаково
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                } else {
+                    // ...
+                    return console.log("Родители разрешили?");
+                }
+            }
+
+            checkAge();
+            
+            function checkAge(age) {
+                if (age > 18) {
+                    return true;
+                }
+                return console.log("Родители разрешили?");
+            }
+
+            checkAge();
+
+            console.log("else не обязателен, оба варианты работают одинаково")
+
+        </script>
+        
+    </body>
+</html>
