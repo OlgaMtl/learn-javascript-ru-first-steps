@@ -3,6 +3,53 @@
     <meta charset="utf-8">
     <body>
       <img src="Функции_задача 4.png">
+      <script>
+        "use strict";
+
+        function pow(x,n) {
+
+          const a = x;
+          let result
+          
+          for(n; n > 1; --n){
+            if ((n-1) < 1){
+              return  "n не натуральное число"
+            }
+            
+            result = (x *= a);
+          }
+
+          return result;
+        } 
+
+        console.log(pow(3,2));
+        console.log(pow(3,3));
+        console.log(pow(1,100));
+        console.log(pow(3,3.25));
+        // console.log(pow(prompt("введите любое число"), prompt("введите натуральное число")));
+
+        // Решение из учебника 
+        // function pow(x, n) {
+        // let result = x;
+
+        // for (let i = 1; i < n; i++) {
+        // result *= x;
+        // }
+
+        // return result;
+        // }
+
+        // let x = prompt("x?", '');
+        // let n = prompt("n?", '');
+
+        // if (n < 1) {
+        // alert(`Степень ${n} не поддерживается, используйте натуральное число`);
+        // } else {
+        // alert( pow(x, n) );
+        // }
+
+
+        </script>
         
     </body>
 </html>
